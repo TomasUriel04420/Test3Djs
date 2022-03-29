@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Satarted - Dinamic properties</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+
+<SCRIPT language="JavaScript">
+
+d3.selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+    .style("font-size", function(d) { return d + "px"; });
+</SCRIPT>
+</body>
+</html>

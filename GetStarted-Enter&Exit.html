@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Started - Enter and exit</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+
+<script language="JavaScript">
+   /* d3.select("body")
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+  .enter().append("p")
+    .text(function(d) { return "I’m number " + d + "!"; });*/
+
+
+    // Update…
+var p = d3.select("body")
+  .selectAll("p")
+  .data([4, 8, 15, 16, 23, 42])
+    .text(function(d) { return d; });
+
+// Enter…
+p.enter().append("p")
+    .text(function(d) { return d; });
+
+// Exit…
+p.exit().remove();
+</script>
+
+</body>
+</html>

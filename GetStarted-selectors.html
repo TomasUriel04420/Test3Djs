@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Started with d3js</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<p>*</p>
+<p>**</p>
+<p>***</p>
+<p>****</p>
+<p>*****</p>
+
+<script language="JavaScript">
+
+//alert("It's Working this shit!!");
+
+// Old way to select display elements on html body
+/*console.info("Selecting a p element");
+var paragraphs = document.getElementsByTagName("p");
+
+console.info("Setting values");
+for (var i = 0; i < paragraphs.length; i++) {
+  var paragraph = paragraphs.item(i);
+  paragraph.style.setProperty("color", "blue", null);
+}*/
+
+console.info("Selecting all p tags and setting color");
+d3.selectAll("p").style("color", "blue");
+
+console.info("Selecting body and set background-color");
+d3.select("body").style("background-color", "black");
+
+</script>
+
+</body>
+</html>

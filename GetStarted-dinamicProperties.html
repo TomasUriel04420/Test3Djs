@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Satarted - Dinamic properties</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<p>*****</p>
+<p>****</p>
+<p>***</p>
+<p>**</p>
+<p>*</p>
+<p>*</p>
+<p>**</p>
+<p>***</p>
+<p>****</p>
+<p>*****</p>
+
+<SCRIPT language="JavaScript">
+
+// Setting random colors
+d3.selectAll("p").style("color", function() {
+  return "hsl(" + Math.random() * 360 + ",100%,50%)";
+});
+
+/*d3.selectAll("p").style("color", function(d, i) {
+  return i % 2 ? "#fff" : "#eee";
+});*/
+</SCRIPT>
+</body>
+</html>
